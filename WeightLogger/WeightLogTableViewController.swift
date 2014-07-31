@@ -13,7 +13,7 @@ import CoreData
 class WeightLogTableViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource {
     var totalEntries: Int = 0
     
-    @IBOutlet var tblLog : UITableView = nil
+    @IBOutlet var tblLog : UITableView?
 
     @IBAction func btnClearLog(sender : AnyObject) {
         var appDel = (UIApplication.sharedApplication().delegate as AppDelegate)
@@ -28,7 +28,7 @@ class WeightLogTableViewController: UITableViewController, UITableViewDelegate, 
         }
         context.save(nil)
         totalEntries = 0
-        tblLog.reloadData()
+        tblLog?.reloadData()
     }
 
     override func viewDidLoad() {
@@ -74,7 +74,7 @@ class WeightLogTableViewController: UITableViewController, UITableViewDelegate, 
         
         //get contents and put into cell
         var thisWeight: UserWeights = results[indexPath.row] as UserWeights
-        cell.text = thisWeight.weight + " " + thisWeight.units
+        cell.textLabel.text = thisWeight.weight + " " + thisWeight.units
         cell.detailTextLabel.text = thisWeight.date
         return cell
     }
@@ -97,7 +97,7 @@ class WeightLogTableViewController: UITableViewController, UITableViewDelegate, 
         context.deleteObject(results[indexPath.row] as NSManagedObject)
         context.save(nil)
         totalEntries = totalEntries - 1
-        tblLog.reloadData()
+        tblLog?.reloadData()
         println("Done")
     }
 

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE569306198A83C60042B9C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE569305198A83C60042B9C4 /* ViewController.swift */; };
 		CE869FE51953699600A90A9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE869FE41953699600A90A9A /* AppDelegate.swift */; };
 		CE869FE81953699600A90A9A /* WeightLogger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE869FE61953699600A90A9A /* WeightLogger.xcdatamodeld */; };
-		CE869FEA1953699600A90A9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE869FE91953699600A90A9A /* ViewController.swift */; };
 		CE869FED1953699600A90A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE869FEB1953699600A90A9A /* Main.storyboard */; };
 		CE869FEF1953699600A90A9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE869FEE1953699600A90A9A /* Images.xcassets */; };
 		CE869FFB1953699600A90A9A /* WeightLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE869FFA1953699600A90A9A /* WeightLoggerTests.swift */; };
@@ -29,11 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE569305198A83C60042B9C4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE869FDF1953699600A90A9A /* WeightLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE869FE31953699600A90A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE869FE41953699600A90A9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE869FE71953699600A90A9A /* WeightLogger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeightLogger.xcdatamodel; sourceTree = "<group>"; };
-		CE869FE91953699600A90A9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE869FEC1953699600A90A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE869FEE1953699600A90A9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE869FF41953699600A90A9A /* WeightLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeightLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,14 +83,14 @@
 		CE869FE11953699600A90A9A /* WeightLogger */ = {
 			isa = PBXGroup;
 			children = (
+				CE569305198A83C60042B9C4 /* ViewController.swift */,
 				CE869FE41953699600A90A9A /* AppDelegate.swift */,
-				CE869FE91953699600A90A9A /* ViewController.swift */,
 				CE869FEB1953699600A90A9A /* Main.storyboard */,
 				CE86A00419536C2900A90A9A /* EnterYourWeightViewController.swift */,
 				CE86A00619536C5B00A90A9A /* WeightLogTableViewController.swift */,
-				CE869FEE1953699600A90A9A /* Images.xcassets */,
-				CE869FE61953699600A90A9A /* WeightLogger.xcdatamodeld */,
 				CE86A00819536E5300A90A9A /* UserWeights.swift */,
+				CE869FE61953699600A90A9A /* WeightLogger.xcdatamodeld */,
+				CE869FEE1953699600A90A9A /* Images.xcassets */,
 				CE869FE21953699600A90A9A /* Supporting Files */,
 			);
 			path = WeightLogger;
@@ -220,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE869FEA1953699600A90A9A /* ViewController.swift in Sources */,
+				CE569306198A83C60042B9C4 /* ViewController.swift in Sources */,
 				CE86A00719536C5B00A90A9A /* WeightLogTableViewController.swift in Sources */,
 				CE86A00919536E5300A90A9A /* UserWeights.swift in Sources */,
 				CE869FE51953699600A90A9A /* AppDelegate.swift in Sources */,
@@ -415,6 +415,7 @@
 				CE86A0001953699600A90A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE86A0011953699600A90A9A /* Build configuration list for PBXNativeTarget "WeightLoggerTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +424,7 @@
 				CE86A0031953699600A90A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
