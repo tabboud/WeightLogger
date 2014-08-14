@@ -17,7 +17,7 @@ class EnterYourWeightViewController: UIViewController {
     @IBOutlet var units : UISwitch!
     
     @IBAction func btnSavePressed(sender : AnyObject) {
-        println("weight: \(txtWeight.text.isEmpty)")
+        
         
         if(!txtWeight.text.isEmpty){
             //save data
