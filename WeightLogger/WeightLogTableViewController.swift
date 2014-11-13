@@ -69,7 +69,7 @@ class WeightLogTableViewController: UITableViewController, UITableViewDelegate, 
         
         //get contents and put into cell
         var thisWeight: UserWeights = results[indexPath.row] as UserWeights
-        cell.textLabel?.text = thisWeight.weight + " " + thisWeight.units
+        cell.textLabel.text = thisWeight.weight + " " + thisWeight.units
         cell.detailTextLabel?.text = thisWeight.date
         return cell
     }
