@@ -21,7 +21,7 @@ class EnterYourWeightViewController: UIViewController {
         
         if(!txtWeight.text.isEmpty){
             //save data
-            var appDel: AppDelegate = (UIApplication.sharedApplication().delegate as AppDelegate)
+            var appDel: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
             var context: NSManagedObjectContext = appDel.managedObjectContext!
             
             
@@ -42,7 +42,7 @@ class EnterYourWeightViewController: UIViewController {
             let dateFormatter = NSDateFormatter()
             var curLocale: NSLocale = NSLocale.currentLocale()
             var formatString: NSString = NSDateFormatter.dateFormatFromTemplate("EdMMM h:mm a", options: 0, locale: curLocale)!
-            dateFormatter.dateFormat = formatString
+            dateFormatter.dateFormat = formatString as String
             newWeight.date = dateFormatter.stringFromDate(NSDate())
             
             context.save(nil)
@@ -58,7 +58,7 @@ class EnterYourWeightViewController: UIViewController {
     }
     
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.view.endEditing(true)
     }
     
